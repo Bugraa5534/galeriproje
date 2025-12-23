@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TOGG Modelleri</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white; 
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #333;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    font-size: 24px;
+    position: relative;
+}
+
+.Anasayfa {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.Anasayfa a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.Anasayfa a:hover {
+    color: aqua;
+}
+
+.togg-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+.togg-item {
+    background-color: #222;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.togg-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.6);
+}
+
+.arabafoto {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.togg-item h3 a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.togg-item h3 a:hover {
+    color: #007BFF;
+}
+
+.togg-item p {
+    padding: 10px;
+    color: #aaa;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .togg-item {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    TOGG Modellerimiz
+    <div class="Anasayfa">
+        <a href="arababolum.html">Geri</a>
+    </div>
+</div>
+
+<div class="togg-gallery">
+
+    <div class="togg-item">
+        <img class="arabafoto" src="resim/t10xv1.jpg" alt="TOGG T10X V1">
+        <h3><a href="t10xv1.html">T10X V1</a></h3>
+        <p>TOGG'un ilk versiyonu olan T10X V1, modern tasarımı ve güçlü performansı ile dikkat çekiyor.</p>
+    </div>
+
+    <div class="togg-item">
+        <img class="arabafoto" src="resim/t10xv2.jpg" alt="TOGG T10X V2">
+        <h3><a href="t10xv2.html">T10X V2</a></h3>
+        <p>Yenilikçi özelliklerle donatılmış T10X V2, daha yüksek performans sunuyor.</p>
+    </div>
+
+    <div class="togg-item">
+        <img class="arabafoto" src="resim/t10xrwd.jpg" alt="TOGG T10X RWD">
+        <h3><a href="t10xrwd.html">T10X RWD</a></h3>
+        <p>Arkadan itiş versiyonu ile T10X, sürüş keyfini zirveye taşıyor.</p>
+    </div>
+
+    <div class="togg-item">
+        <img class="arabafoto" src="resim/t10xawd.jpeg" alt="TOGG T10X AWD">
+        <h3><a href="t10xawd.html">T10X AWD</a></h3>
+        <p>Çift motor ve dört çeker sistemiyle en zorlu koşullarda bile mükemmel performans.</p>
+    </div>
+
+    <div class="togg-item">
+        <img class="arabafoto" src="resim/t10f.jpg" alt="TOGG T10F">
+        <h3><a href="t10f.html">T10F</a></h3>
+        <p>Sportif bir elektrikli sedan modeli olan T10F, şıklığı ve hız tutkunlarını cezbediyor.</p>
+    </div>
+
+</div>
+
+</body>
+</html>

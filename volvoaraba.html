@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Volvo Modelleri</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111; 
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #333;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    font-size: 24px;
+    position: relative;
+}
+
+.Anasayfa {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.Anasayfa a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.Anasayfa a:hover {
+    color: aqua;
+}
+
+.volvo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+.volvo-item {
+    background-color: #222;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.volvo-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.6);
+}
+
+.arabafoto {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.volvo-item h3 a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.volvo-item h3 a:hover {
+    color: #007BFF;
+}
+
+.volvo-item p {
+    padding: 10px;
+    color: #aaa;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .volvo-item {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    Volvo Modellerimiz
+    <div class="Anasayfa">
+        <a href="arababolum.html">Geri</a>
+    </div>
+</div>
+
+<div class="volvo-gallery">
+
+    <div class="volvo-item">
+        <img class="arabafoto" src="resim/s60.jpeg" alt="Volvo S60">
+        <h3><a href="s60.html">Volvo S60</a></h3>
+        <p>Volvo'nun kompakt sedan modeli S60, şıklığı ve performansı ile dikkat çekiyor.</p>
+    </div>
+
+    <div class="volvo-item">
+        <img class="arabafoto" src="resim/s90.jpeg" alt="Volvo S90">
+        <h3><a href="s90.html">Volvo S90</a></h3>
+        <p>Volvo'nun lüks sedan modeli S90, mükemmel sürüş ve konfor sunuyor.</p>
+    </div>
+
+    <div class="volvo-item">
+        <img class="arabafoto" src="resim/xc40.jpg" alt="Volvo XC40">
+        <h3><a href="xc40.html">Volvo XC40</a></h3>
+        <p>Yüksek performans ve modern tasarımıyla kompakt SUV sınıfında lider olan XC40.</p>
+    </div>
+
+    <div class="volvo-item">
+        <img class="arabafoto" src="resim/xc60.jpeg" alt="Volvo XC60">
+        <h3><a href="xc60.html">Volvo XC60</a></h3>
+        <p>Volvo'nun orta büyüklükteki SUV modeli XC60, güvenlik ve konforu bir arada sunuyor.</p>
+    </div>
+
+    <div class="volvo-item">
+        <img class="arabafoto" src="resim/xc90.jpeg" alt="Volvo XC90">
+        <h3><a href="xc90.html">Volvo XC90</a></h3>
+        <p>Volvo'nun en büyük SUV modeli XC90, geniş iç hacmi ve güçlü motor seçenekleriyle öne çıkıyor.</p>
+    </div>
+
+</div>
+
+</body>
+</html>

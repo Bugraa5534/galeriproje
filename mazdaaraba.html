@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mazda Modelleri</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #1c1c1c, #333);
+    color: #fff;
+}
+
+.header {
+    background: rgba(0,0,0,0.85);
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    font-size: 28px;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.Anasayfa {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.Anasayfa a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.Anasayfa a:hover {
+    color: #00aaff;
+}
+
+.mazda-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 40px 20px;
+}
+
+.mazda-item {
+    background: rgba(255,255,255,0.05);
+    border-radius: 12px;
+    width: 250px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+}
+
+.mazda-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.6);
+}
+
+.arabafoto {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-bottom: 2px solid #00aaff;
+    transition: transform 0.3s;
+}
+
+.mazda-item:hover .arabafoto {
+    transform: scale(1.05);
+}
+
+.mazda-item h3 a {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.mazda-item h3 a:hover {
+    color: #00aaff;
+}
+
+.mazda-item p {
+    padding: 10px;
+    color: #ccc;
+    font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    Mazda Modellerimiz
+    <div class="Anasayfa">
+        <a href="arababolum.html">Geri</a>
+    </div>
+</div>
+
+<div class="mazda-gallery">
+
+    <div class="mazda-item">
+        <img class="arabafoto" src="resim/mazda3.jpeg" alt="Mazda 3">
+        <h3><a href="mazda3.html">Mazda 3</a></h3>
+        <p>Kompakt ve sportif hatchback.</p>
+    </div>
+
+    <div class="mazda-item">
+        <img class="arabafoto" src="resim/mazda6.jpeg" alt="Mazda 6">
+        <h3><a href="mazda6.html">Mazda 6</a></h3>
+        <p>Şık ve konforlu sedan.</p>
+    </div>
+
+    <div class="mazda-item">
+        <img class="arabafoto" src="resim/cx30.jpeg" alt="Mazda CX-30">
+        <h3><a href="mazdacx30.html">Mazda CX-30</a></h3>
+        <p>Kompakt crossover SUV.</p>
+    </div>
+
+    <div class="mazda-item">
+        <img class="arabafoto" src="resim/cx5.jpeg" alt="Mazda CX-5">
+        <h3><a href="mazdacx5.html">Mazda CX-5</a></h3>
+        <p>En popüler Mazda SUV modeli.</p>
+    </div>
+
+    <div class="mazda-item">
+        <img class="arabafoto" src="resim/mx5.jpeg" alt="Mazda MX-5">
+        <h3><a href="mazdamx5.html">Mazda MX-5</a></h3>
+        <p>Efsanevi roadster, saf sürüş keyfi.</p>
+    </div>
+
+</div>
+
+</body>
+</html>

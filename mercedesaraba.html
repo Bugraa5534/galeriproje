@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mercedes Modelleri</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #1c1c1c, #333);
+    color: #fff;
+}
+
+.header {
+    background: rgba(0,0,0,0.85);
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    font-size: 28px;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.Anasayfa {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.Anasayfa a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.Anasayfa a:hover {
+    color: #00aaff;
+}
+
+.mercedes-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 40px 20px;
+}
+
+.mercedes-item {
+    background: rgba(255,255,255,0.05);
+    border-radius: 12px;
+    width: 250px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+}
+
+.mercedes-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.6);
+}
+
+.arabafoto {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-bottom: 2px solid #00aaff;
+    transition: transform 0.3s;
+}
+
+.mercedes-item:hover .arabafoto {
+    transform: scale(1.05);
+}
+
+.mercedes-item h3 a {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.mercedes-item h3 a:hover {
+    color: #00aaff;
+}
+
+.mercedes-item p {
+    padding: 10px;
+    color: #ccc;
+    font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    Mercedes-Benz Modellerimiz
+    <div class="Anasayfa">
+        <a href="arababolum.html">Geri</a>
+    </div>
+</div>
+
+<div class="mercedes-gallery">
+
+    <div class="mercedes-item">
+        <img class="arabafoto" src="resim/c200.jpeg" alt="Mercedes C200">
+        <h3><a href="c200.html">Mercedes C200</a></h3>
+        <p>Daha fazla bilgi için tıklayınız.</p>
+    </div>
+
+    <div class="mercedes-item">
+        <img class="arabafoto" src="resim/c180.jpeg" alt="Mercedes C180">
+        <h3><a href="c180.html">Mercedes C180</a></h3>
+        <p>Daha fazla bilgi için tıklayınız.</p>
+    </div>
+
+    <div class="mercedes-item">
+        <img class="arabafoto" src="resim/e200.jpg" alt="Mercedes E200">
+        <h3><a href="e200.html">Mercedes E200</a></h3>
+        <p>Daha fazla bilgi için tıklayınız.</p>
+    </div>
+
+    <div class="mercedes-item">
+        <img class="arabafoto" src="resim/cla200.jpg" alt="Mercedes CLA 200">
+        <h3><a href="cla200.html">Mercedes CLA 200</a></h3>
+        <p>Daha fazla bilgi için tıklayınız.</p>
+    </div>
+
+    <div class="mercedes-item">
+        <img class="arabafoto" src="resim/glc.jpeg" alt="Mercedes GLC">
+        <h3><a href="glc.html">Mercedes GLC</a></h3>
+        <p>Daha fazla bilgi için tıklayınız.</p>
+    </div>
+
+</div>
+
+</body>
+</html>

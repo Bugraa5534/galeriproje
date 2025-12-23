@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Honda Motor Modelleri</title>
+
+<style>
+:root{
+    --accent:#007BFF;
+}
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    min-height:100vh;
+    background:
+        linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.85)),
+        url("resim/honda-bg.jpg") no-repeat center center fixed;
+    background-size:cover;
+    color:#fff;
+}
+
+.header{
+    position: sticky;
+    top: 0;
+    background: rgba(0,0,0,0.85);
+    padding: 40px 20px;
+    text-align: center;
+    font-size: 28px;
+    letter-spacing: 3px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.7);
+    z-index: 10;
+}
+
+.Anasayfa{
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.Anasayfa a{
+    color: #aaa;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.Anasayfa a:hover{
+    color: var(--accent);
+}
+
+.honda-gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+    gap: 30px;
+    padding: 60px;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.honda-item{
+    background: rgba(15,15,15,0.75);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+    transition: transform 0.4s, box-shadow 0.4s;
+    backdrop-filter: blur(6px);
+}
+
+.honda-item:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 30px 70px rgba(0,0,0,0.95);
+}
+
+.motorfoto{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    filter: brightness(0.85);
+    transition: 0.4s;
+}
+
+.honda-item:hover .motorfoto{
+    filter: brightness(1);
+}
+
+.card-content{
+    padding: 22px;
+    text-align: center;
+}
+
+.card-content h3{
+    margin: 10px 0;
+}
+
+.card-content h3 a{
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.card-content h3 a:hover{
+    color: var(--accent);
+}
+
+.card-content p{
+    font-size: 14px;
+    color: rgba(255,255,255,0.75);
+    margin-top: 8px;
+}
+
+@media (max-width:768px){
+    .header{
+        font-size:22px;
+        padding:30px 15px;
+    }
+    .honda-gallery{
+        padding:30px 20px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    HONDA MOTOR MODELLERİ
+    <div class="Anasayfa">
+        <a href="motorbolumu.html">← Geri</a>
+    </div>
+</div>
+
+<div class="honda-gallery">
+
+    <div class="honda-item">
+        <img class="motorfoto" src="resim/hondacb500f.jpg" alt="Honda CB500F">
+        <div class="card-content">
+            <h3><a href="hondacb500f.html">CB500F</a></h3>
+            <p>Daha fazla bilgi için tıklayınız.</p>
+        </div>
+    </div>
+
+    <div class="honda-item">
+        <img class="motorfoto" src="resim/hondacbr1000rr.jpg" alt="Honda CBR1000RR">
+        <div class="card-content">
+            <h3><a href="hondacbr1000rr.html">CBR1000RR</a></h3>
+            <p>Yüksek performanslı spor motosiklet.</p>
+        </div>
+    </div>
+
+    <div class="honda-item">
+        <img class="motorfoto" src="resim/hondacrf450r.png" alt="Honda CRF450R">
+        <div class="card-content">
+            <h3><a href="hondacrf450r.html">CRF450R</a></h3>
+            <p>Off-road ve yarış odaklı motor.</p>
+        </div>
+    </div>
+
+    <div class="honda-item">
+        <img class="motorfoto" src="resim/hondaafricatwin.webp" alt="Honda Africa Twin">
+        <div class="card-content">
+            <h3><a href="hondaafricatwin.html">Africa Twin</a></h3>
+            <p>Uzun yol ve macera motosikleti.</p>
+        </div>
+    </div>
+
+    <div class="honda-item">
+        <img class="motorfoto" src="resim/hondashadowphantom.webp" alt="Honda Shadow Phantom">
+        <div class="card-content">
+            <h3><a href="hondashadowphantom.html">Shadow Phantom</a></h3>
+            <p>Klasik cruiser tarzı motosiklet.</p>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

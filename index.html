@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Buğra Galeri</title>
+
+<style>
+:root {
+    --neon: #00ff55;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Arial Black', Impact, sans-serif;
+    overflow-x: hidden;
+}
+
+body {
+    background: url('resim/zx10r.webp') no-repeat center center fixed;
+    background-size: cover;
+    transition: background-image 0.8s ease;
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(
+        120deg,
+        rgba(0,0,0,0.85),
+        rgba(0,0,0,0.35),
+        rgba(0,0,0,0.85)
+    );
+    z-index: 1;
+    transition: 0.6s;
+}
+
+.intro {
+    position: fixed;
+    inset: 0;
+    background: black;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: introOut 2.5s forwards 2.5s;
+}
+
+.intro h1 {
+    color: var(--neon);
+    font-size: 70px;
+    letter-spacing: 6px;
+    animation: introPulse 1.5s infinite alternate;
+}
+
+@keyframes introPulse {
+    from { text-shadow: 0 0 10px var(--neon); }
+    to { text-shadow: 0 0 50px var(--neon); }
+}
+
+@keyframes introOut {
+    to { opacity: 0; visibility: hidden; }
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    padding: 22px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(6px);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li { margin-right: 28px; }
+
+nav a {
+    color: rgba(255,255,255,0.65);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover { color: var(--neon); }
+
+.controls {
+    display: flex;
+    gap: 12px;
+}
+
+.controls button {
+    padding: 8px 18px;
+    border-radius: 40px;
+    border: 2px solid var(--neon);
+    background: transparent;
+    color: var(--neon);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.controls button:hover {
+    background: var(--neon);
+    color: black;
+}
+
+.hero {
+    position: relative;
+    z-index: 2;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-title {
+    font-size: 90px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    color: var(--neon);
+    text-shadow:
+        0 0 15px rgba(0,255,85,0.9),
+        0 0 50px rgba(0,255,85,0.7);
+}
+.logo-text {
+    position: fixed;
+    right: 35px;
+    bottom: 30px;
+    z-index: 10;
+    color: var(--neon);
+    text-align: right;
+    font-size: 15px;
+    text-shadow: 0 0 20px var(--neon);
+}
+
+.logo-text .name { font-size: 20px; }
+.logo-text .id {
+    font-size: 12px;
+    color: white;
+    letter-spacing: 3px;
+    opacity: 0.8;
+}
+@media (max-width: 768px) {
+    .center-title {
+        font-size: 46px;
+        letter-spacing: 4px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="intro">
+    <h1>BUĞRA GALERİ</h1>
+</div>
+
+<div class="overlay" id="overlay"></div>
+
+<header class="header">
+    <nav>
+        <ul>
+            <li><a href="index.html">Anasayfa</a></li>
+            <li><a href="Hakkında.html">Hakkımızda</a></li>
+            <li><a href="arababolum.html">Araba Modelleri</a></li>
+            <li><a href="motorbolumu.html">Motor Modelleri</a></li>
+        </ul>
+    </nav>
+
+    <div class="controls">
+        <button onclick="setBg('resim/zx10r.webp')">Motor</button>
+        <button onclick="setBg('resim/cla200.jpg')">Araba</button>
+        <button onclick="toggleMode()">Gece / Gündüz</button>
+    </div>
+</header>
+
+<div class="hero">
+    <div class="center-title">BUĞRA GALERİ</div>
+</div>
+
+<div class="logo-text">
+    <div>Yapımcı</div>
+    <div class="name">Adem Buğra Yılmaz</div>
+    <div class="id">6275</div>
+</div>
+
+<script>
+function setBg(img) {
+    document.body.style.backgroundImage = `url('${img}')`;
+}
+let dark = true;
+function toggleMode() {
+    const overlay = document.getElementById("overlay");
+    dark = !dark;
+
+    overlay.style.background = dark
+        ? "linear-gradient(120deg, rgba(0,0,0,0.85), rgba(0,0,0,0.35), rgba(0,0,0,0.85))"
+        : "linear-gradient(120deg, rgba(255,255,255,0.65), rgba(255,255,255,0.25), rgba(255,255,255,0.65))";
+}
+</script>
+
+</body>
+</html>

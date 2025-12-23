@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Porsche Modelleri</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #1c1c1c, #333);
+    color: #fff;
+}
+
+.header {
+    background: rgba(0,0,0,0.85);
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    font-size: 28px;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.Anasayfa {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.Anasayfa a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.Anasayfa a:hover {
+    color: #00aaff;
+}
+
+.porsche-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 40px 20px;
+}
+
+.porsche-item {
+    background: rgba(255,255,255,0.05);
+    border-radius: 12px;
+    width: 250px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+}
+
+.porsche-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.6);
+}
+
+.arabafoto {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-bottom: 2px solid #00aaff;
+    transition: transform 0.3s;
+}
+
+.porsche-item:hover .arabafoto {
+    transform: scale(1.05);
+}
+
+.porsche-item h3 a {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.porsche-item h3 a:hover {
+    color: #00aaff;
+}
+
+.porsche-item p {
+    padding: 10px;
+    color: #ccc;
+    font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    Porsche Modellerimiz
+    <div class="Anasayfa">
+        <a href="arababolum.html">Geri</a>
+    </div>
+</div>
+
+<div class="porsche-gallery">
+
+    <div class="porsche-item">
+        <img class="arabafoto" src="resim/911.jpg" alt="Porsche 911">
+        <h3><a href="911.html">Porsche 911</a></h3>
+        <p>Daha fazla bilgi için tıklayınız.</p>
+    </div>
+
+    <div class="porsche-item">
+        <img class="arabafoto" src="resim/cayman.jpeg" alt="Porsche 718 Cayman">
+        <h3><a href="cayman.html">Porsche 718 Cayman</a></h3>
+        <p>Daha fazla bilgi için tıklayınız.</p>
+    </div>
+
+    <div class="porsche-item">
+        <img class="arabafoto" src="resim/panamera.jpg" alt="Porsche Panamera">
+        <h3><a href="panamera.html">Porsche Panamera</a></h3>
+        <p>Daha fazla bilgi için tıklayınız.</p>
+    </div>
+
+    <div class="porsche-item">
+        <img class="arabafoto" src="resim/macan.jpeg" alt="Porsche Macan">
+        <h3><a href="macan.html">Porsche Macan</a></h3>
+        <p>Daha fazla bilgi için tıklayınız.</p>
+    </div>
+
+    <div class="porsche-item">
+        <img class="arabafoto" src="resim/cayenne.jpeg" alt="Porsche Cayenne">
+        <h3><a href="cayenne.html">Porsche Cayenne</a></h3>
+        <p>Daha fazla bilgi için tıklayınız.</p>
+    </div>
+
+</div>
+
+</body>
+</html>

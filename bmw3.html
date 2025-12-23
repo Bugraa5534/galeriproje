@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BMW 320</title>
+
+<style>
+:root{
+    --accent:#0066cc;
+}
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    min-height:100vh;
+    background:
+        linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.85)),
+        url("resim/bmw320.jpeg") no-repeat center center fixed;
+    background-size:cover;
+    color:#fff;
+}
+
+.header{
+    position:sticky;
+    top:0;
+    background:rgba(0,0,0,0.85);
+    padding:30px 20px;
+    text-align:center;
+    font-size:28px;
+    letter-spacing:2px;
+    box-shadow:0 8px 30px rgba(0,0,0,0.7);
+    z-index:10;
+}
+
+.Anasayfa{
+    position:absolute;
+    right:30px;
+    top:50%;
+    transform:translateY(-50%);
+}
+
+.Anasayfa a{
+    color:#ccc;
+    text-decoration:none;
+    font-size:14px;
+    transition:0.3s;
+}
+
+.Anasayfa a:hover{
+    color:var(--accent);
+}
+
+.container{
+    max-width:900px;
+    margin:50px auto;
+    background:rgba(0,0,0,0.75);
+    border-radius:16px;
+    padding:30px;
+    box-shadow:0 20px 50px rgba(0,0,0,0.8);
+    backdrop-filter:blur(6px);
+}
+
+.arabafoto{
+    width:100%;
+    height:400px;
+    object-fit:cover;
+    border-radius:12px;
+    filter:brightness(0.85);
+    transition:0.4s;
+}
+
+.container:hover .arabafoto{
+    filter:brightness(1);
+}
+
+h2{
+    color:#fff;
+    margin-top:20px;
+}
+
+p, ul{
+    color:rgba(255,255,255,0.85);
+    line-height:1.6;
+    margin-top:10px;
+}
+
+ul li{
+    margin-bottom:6px;
+}
+
+@media (max-width:768px){
+    .header{
+        font-size:22px;
+        padding:25px 15px;
+    }
+    .container{
+        margin:30px 15px;
+        padding:20px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    BMW 320
+    <div class="Anasayfa">
+        <a href="bmwaraba.html">← Geri</a>
+    </div>
+</div>
+
+<div class="container">
+    <img class="arabafoto" src="resim/bmw320.jpeg" alt="BMW 320">
+
+    <h2>Genel Bakış</h2>
+    <p>BMW 320, 3 Serisi’nin sportif sürüş karakteri ile günlük kullanımı birleştiren en popüler modellerinden biridir. Dinamik yapısı ve premium hissiyle segmentinde öne çıkar.</p>
+
+    <h2>Motor ve Performans</h2>
+    <p>BMW 320; benzinli ve dizel motor seçenekleri ile sunulmaktadır.  
+    Motor gücü yaklaşık <strong>184 HP</strong> seviyesindedir.  
+    Arkadan itiş veya xDrive çekiş sistemi sayesinde yüksek sürüş keyfi sunar.</p>
+
+    <h2>Tasarım ve Donanım</h2>
+    <p>Sportif sedan tasarımı, LED farlar, dijital gösterge paneli ve kaliteli iç mekan detayları ile dikkat çeker. Sürücü odaklı kokpit yapısı ile BMW’nin karakterini yansıtır.</p>
+
+    <h2>Öne Çıkan Özellikler</h2>
+    <ul>
+        <li>Sportif ve şık sedan tasarım.</li>
+        <li>184 HP güçlü motor.</li>
+        <li>Dinamik ve dengeli sürüş.</li>
+        <li>Gelişmiş sürüş destek sistemleri.</li>
+        <li>Premium iç mekan kalitesi.</li>
+        <li>Günlük kullanım için ideal boyutlar.</li>
+    </ul>
+
+    <h2>Teknik Özellikler (Özet)</h2>
+    <ul>
+        <li>Motor Tipi: Benzinli / Dizel.</li>
+        <li>Güç: ~184 HP.</li>
+        <li>Tork: ~300 – 380 Nm.</li>
+        <li>Şanzıman: 8 ileri otomatik.</li>
+        <li>Çekiş: Arkadan itiş / xDrive.</li>
+        <li>Ağırlık: ~1.500 – 1.600 kg.</li>
+        <li>Maksimum Hız: ~235 km/s.</li>
+    </ul>
+</div>
+
+</body>
+</html>

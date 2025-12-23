@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yamaha Motor Modelleri</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #333;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    font-size: 24px;
+    position: relative;
+}
+
+.Anasayfa {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.Anasayfa a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.Anasayfa a:hover {
+    color: aqua;
+}
+.yamaha-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+.yamaha-item {
+    background-color: #222;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.yamaha-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.6);
+}
+
+.motorfoto {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.yamaha-item h3 a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.yamaha-item h3 a:hover {
+    color: #00aaff;
+}
+
+.yamaha-item p {
+    padding: 10px;
+    color: #aaa;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .yamaha-item {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    Yamaha Motor Modellerimiz
+    <div class="Anasayfa">
+        <a href="motorbolumu.html">Geri</a>
+    </div>
+</div>
+
+<div class="yamaha-gallery">
+
+    <div class="yamaha-item">
+        <img class="motorfoto" src="resim/mt07.jpg" alt="Yamaha MT-07">
+        <h3><a href="mt07.html">MT-07</a></h3>
+        <p>Yamaha'nın güçlü ve hafif naked bike modeli MT-07, keyifli sürüş deneyimi sunuyor.</p>
+    </div>
+
+    <div class="yamaha-item">
+        <img class="motorfoto" src="resim/mt09.jpg" alt="Yamaha MT-09">
+        <h3><a href="mt09.html">MT-09</a></h3>
+        <p>Yamaha MT-09, üstün performansı ve özgün tasarımıyla dikkatleri üzerine çekiyor.</p>
+    </div>
+
+    <div class="yamaha-item">
+        <img class="motorfoto" src="resim/r1.webp" alt="Yamaha R1">
+        <h3><a href="r1.html">R1</a></h3>
+        <p>Yamaha R1, yarış teknolojileri ile donatılmış, yüksek performanslı bir superbike.</p>
+    </div>
+
+    <div class="yamaha-item">
+        <img class="motorfoto" src="resim/r6.jpeg" alt="Yamaha R6">
+        <h3><a href="r6.html">R6</a></h3>
+        <p>Yamaha R6, mükemmel aerodinamik yapısı ve agresif sürüşü ile efsane bir spor motosiklet.</p>
+    </div>
+
+    <div class="yamaha-item">
+        <img class="motorfoto" src="resim/tenere700.jpg" alt="Yamaha Tenere 700">
+        <h3><a href="tenere700.html">Tenere 700</a></h3>
+        <p>Yamaha Tenere 700, her türlü arazide mükemmel performans sergileyen, dayanıklı bir enduro motosiklet.</p>
+    </div>
+
+</div>
+
+</body>
+</html>

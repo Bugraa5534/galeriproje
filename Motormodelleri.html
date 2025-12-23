@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toplu Motor Modelleri</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #333;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    font-size: 24px;
+    position: relative;
+}
+
+.Anasayfa {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.Anasayfa a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.Anasayfa a:hover {
+    color: aqua;
+}
+
+/* GALERİ */
+.toplumotor-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+/* KART */
+.toplumotor-item {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.toplumotor-item:hover {
+    transform: scale(1.05);
+}
+
+.motorfoto {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.toplumotor-item h3 a {
+    text-decoration: none;
+    color: #333;
+}
+
+.toplumotor-item h3 a:hover {
+    color: #007BFF;
+}
+
+.toplumotor-item p {
+    padding: 0 15px 15px;
+    color: #666;
+    font-size: 14px;
+}
+
+/* MOBİL UYUMLULUK */
+@media (max-width: 768px) {
+    .toplumotor-item {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    Toplu Motor Modellerimiz
+    <div class="Anasayfa">
+        <a href="ANASAYFA.html">Anasayfa</a>
+    </div>
+</div>
+
+<div class="toplumotor-gallery">
+
+    <div class="toplumotor-item">
+        <img class="motorfoto" src="resim/hondacbr1000rr.jpg" alt="Honda">
+        <h3><a href="hondamotor.html">Honda</a></h3>
+        <p>Daha fazla bilgi için tıklayınız.</p>
+    </div>
+
+    <div class="toplumotor-item">
+        <img class="motorfoto" src="resim/ktm1290superduke.webp" alt="KTM">
+        <h3><a href="ktmmotor.html">KTM</a></h3>
+        <p>KTM performans motorları.</p>
+    </div>
+
+    <div class="toplumotor-item">
+        <img class="motorfoto" src="resim/bmws1000rr.jpeg" alt="BMW">
+        <h3><a href="bmwmotor.html">BMW</a></h3>
+        <p>BMW motor modelleri.</p>
+    </div>
+
+    <div class="toplumotor-item">
+        <img class="motorfoto" src="resim/mt09.jpg" alt="Yamaha">
+        <h3><a href="yamahamotor.html">Yamaha</a></h3>
+        <p>Yamaha motor dünyası.</p>
+    </div>
+
+    <div class="toplumotor-item">
+        <img class="motorfoto" src="resim/gsxr1000.jpg" alt="Suzuki">
+        <h3><a href="suzukimotor.html">Suzuki</a></h3>
+        <p>Suzuki motor modelleri.</p>
+    </div>
+
+    <div class="toplumotor-item">
+        <img class="motorfoto" src="resim/rsv4.jpeg" alt="Aprilia">
+        <h3><a href="aprillamotor.html">Aprilia</a></h3>
+        <p>Aprilia İtalyan spor motorları.</p>
+    </div>
+
+    <div class="toplumotor-item">
+        <img class="motorfoto" src="resim/zx10r.webp" alt="Kawasaki">
+        <h3><a href="kawasakimotor.html">Kawasaki</a></h3>
+        <p>Kawasaki performans motorları.</p>
+    </div>
+
+</div>
+
+</body>
+</html>

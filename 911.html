@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Porsche 911</title>
+
+<style>
+:root{
+    --accent:#00bcd4;
+}
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    min-height:100vh;
+    background:
+        linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)),
+        url("resim/911.jpg") no-repeat center center fixed;
+    background-size:cover;
+    color:#fff;
+}
+
+.header{
+    position:sticky;
+    top:0;
+    background:rgba(0,0,0,0.85);
+    padding:30px 20px;
+    text-align:center;
+    font-size:28px;
+    letter-spacing:3px;
+    box-shadow:0 10px 40px rgba(0,0,0,0.7);
+    z-index:10;
+}
+
+.Anasayfa{
+    position:absolute;
+    right:30px;
+    top:50%;
+    transform:translateY(-50%);
+}
+
+.Anasayfa a{
+    color:#aaa;
+    text-decoration:none;
+    font-size:14px;
+    transition:0.3s;
+}
+
+.Anasayfa a:hover{
+    color:var(--accent);
+}
+
+.container{
+    max-width:950px;
+    margin:80px auto;
+    padding:40px;
+    background:rgba(15,15,15,0.75);
+    border-radius:18px;
+    box-shadow:0 25px 70px rgba(0,0,0,0.9);
+    backdrop-filter:blur(6px);
+}
+
+.arabafoto{
+    width:100%;
+    height:420px;
+    object-fit:cover;
+    border-radius:14px;
+    box-shadow:0 20px 50px rgba(0,0,0,0.8);
+}
+
+h2{
+    margin-top:35px;
+    color:var(--accent);
+    letter-spacing:2px;
+    border-bottom:1px solid rgba(255,255,255,0.1);
+    padding-bottom:10px;
+}
+
+p{
+    line-height:1.8;
+    color:rgba(255,255,255,0.85);
+    margin-top:15px;
+}
+
+ul{
+    margin-top:15px;
+    padding-left:20px;
+    color:rgba(255,255,255,0.85);
+}
+
+ul li{
+    margin-bottom:10px;
+}
+
+@media (max-width:768px){
+    .container{
+        margin:40px 15px;
+        padding:25px;
+    }
+    .arabafoto{
+        height:260px;
+    }
+    .header{
+        font-size:22px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    PORSCHE 911
+    <div class="Anasayfa">
+        <a href="porschearaba.html">← Geri</a>
+    </div>
+</div>
+
+<div class="container">
+
+<img class="arabafoto" src="resim/911.jpg" alt="Porsche 911">
+
+<h2>Genel Bakış</h2>
+<p>Porsche 911, otomotiv dünyasının en ikonik spor otomobillerinden biridir. Zamansız tasarımı ve güçlü motorlarıyla saf sürüş keyfi sunar.</p>
+
+<h2>Motor ve Performans</h2>
+<p>Turbo beslemeli boxer motor seçenekleriyle 385 HP ile 650+ HP arasında güç üretir. Arkadan motorlu yapısıyla benzersiz denge sağlar.</p>
+
+<h2>Tasarım ve Donanım</h2>
+<p>Klasik 911 silüeti, LED Matrix farlar, dijital göstergeler ve spor koltuklarla tamamlanmıştır.</p>
+
+<h2>Öne Çıkan Özellikler</h2>
+<ul>
+<li>İkonik 911 tasarımı</li>
+<li>385 – 650+ HP güç</li>
+<li>Boxer motor</li>
+<li>Üst düzey yol tutuş</li>
+<li>PDK veya manuel şanzıman</li>
+</ul>
+
+<h2>Teknik Özellikler</h2>
+<ul>
+<li>Motor: Turbo boxer 6</li>
+<li>Güç: ~385 – 650+ HP</li>
+<li>Tork: ~450 – 800 Nm</li>
+<li>0–100 km/s: ~2.7 – 4.2 sn</li>
+<li>Maksimum Hız: ~293 – 330 km/s</li>
+</ul>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BMW 520</title>
+
+<style>
+:root{
+    --accent:#0077cc;
+}
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    min-height:100vh;
+    background:
+        linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.85)),
+        url("resim/bmw5.20.jpeg") no-repeat center center fixed;
+    background-size:cover;
+    color:#fff;
+}
+
+.header{
+    position:sticky;
+    top:0;
+    background:rgba(0,0,0,0.85);
+    padding:30px 20px;
+    text-align:center;
+    font-size:28px;
+    letter-spacing:2px;
+    box-shadow:0 8px 30px rgba(0,0,0,0.7);
+    z-index:10;
+}
+
+.Anasayfa{
+    position:absolute;
+    right:30px;
+    top:50%;
+    transform:translateY(-50%);
+}
+
+.Anasayfa a{
+    color:#ccc;
+    text-decoration:none;
+    font-size:14px;
+    transition:0.3s;
+}
+
+.Anasayfa a:hover{
+    color:var(--accent);
+}
+
+.container{
+    max-width:900px;
+    margin:50px auto;
+    background:rgba(0,0,0,0.75);
+    border-radius:16px;
+    padding:30px;
+    box-shadow:0 20px 50px rgba(0,0,0,0.8);
+    backdrop-filter:blur(6px);
+}
+
+.arabafoto{
+    width:100%;
+    height:400px;
+    object-fit:cover;
+    border-radius:12px;
+    filter:brightness(0.85);
+    transition:0.4s;
+}
+
+.container:hover .arabafoto{
+    filter:brightness(1);
+}
+
+h2{
+    color:#fff;
+    margin-top:20px;
+}
+
+p, ul{
+    color:rgba(255,255,255,0.85);
+    line-height:1.6;
+    margin-top:10px;
+}
+
+ul li{
+    margin-bottom:6px;
+}
+
+@media (max-width:768px){
+    .header{
+        font-size:22px;
+        padding:25px 15px;
+    }
+    .container{
+        margin:30px 15px;
+        padding:20px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    BMW 520
+    <div class="Anasayfa">
+        <a href="bmwaraba.html">← Geri</a>
+    </div>
+</div>
+
+<div class="container">
+    <img class="arabafoto" src="resim/bmw5.20.jpeg" alt="BMW 520">
+
+    <h2>Genel Bakış</h2>
+    <p>BMW 520, 5 Serisi’nin konfor, prestij ve sürüş keyfini bir araya getiren popüler sedan modelidir. İş ve aile kullanımı için ideal olan araç, premium sınıfta güçlü bir konuma sahiptir.</p>
+
+    <h2>Motor ve Performans</h2>
+    <p>BMW 520, genellikle benzinli ve dizel motor seçenekleri ile sunulmaktadır.  
+    Motor gücü yaklaşık <strong>184 HP</strong> seviyesindedir.  
+    Arkadan itiş veya xDrive seçenekleri ile dengeli ve keyifli bir sürüş sunar.</p>
+
+    <h2>Tasarım ve Donanım</h2>
+    <p>Zarif sedan tasarımı, LED farlar, geniş dijital gösterge paneli ve kaliteli iç mekan detayları ile öne çıkar. Konfor odaklı süspansiyon yapısı uzun yolculukları oldukça keyifli hale getirir.</p>
+
+    <h2>Öne Çıkan Özellikler</h2>
+    <ul>
+        <li>Şık ve prestijli sedan tasarım.</li>
+        <li>184 HP güçlü ve ekonomik motor.</li>
+        <li>Konfor odaklı sürüş karakteri.</li>
+        <li>Geniş iç mekan ve ferah arka koltuklar.</li>
+        <li>Gelişmiş sürüş destek sistemleri.</li>
+        <li>Premium iç mekan kalitesi.</li>
+    </ul>
+
+    <h2>Teknik Özellikler (Özet)</h2>
+    <ul>
+        <li>Motor Tipi: Benzinli / Dizel.</li>
+        <li>Güç: ~184 HP.</li>
+        <li>Tork: ~290 – 400 Nm.</li>
+        <li>Şanzıman: 8 ileri otomatik.</li>
+        <li>Çekiş: Arkadan itiş / xDrive.</li>
+        <li>Ağırlık: ~1.600 – 1.700 kg.</li>
+        <li>Maksimum Hız: ~235 km/s.</li>
+    </ul>
+</div>
+
+</body>
+</html>

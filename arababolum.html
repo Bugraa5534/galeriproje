@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Araba Modelleri</title>
+
+<style>
+:root{
+    --accent:#00bcd4;
+}
+
+*{
+    box-sizing:border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0e0e0e;
+    color: #fff;
+}
+.header {
+    background: linear-gradient(120deg, #111, #1c1c1c, #111);
+    padding: 45px 20px;
+    text-align: center;
+    font-size: 28px;
+    letter-spacing: 3px;
+    position: relative;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+}
+
+.Anasayfa {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.Anasayfa a {
+    color: #aaa;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.Anasayfa a:hover {
+    color: var(--accent);
+}
+.araba-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 50px;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.araba-item {
+    background: #151515;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.7);
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.araba-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 60px rgba(0,0,0,0.9);
+}
+.arabafoto {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    filter: brightness(0.85);
+    transition: 0.4s;
+}
+
+.araba-item:hover .arabafoto {
+    filter: brightness(1);
+}
+.card-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-content h3 {
+    margin: 10px 0;
+}
+
+.card-content h3 a {
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.card-content h3 a:hover {
+    color: var(--accent);
+}
+
+.card-content p {
+    font-size: 14px;
+    color: #aaa;
+    margin-top: 8px;
+}
+@media (max-width: 768px) {
+    .header {
+        font-size: 22px;
+        padding: 35px 15px;
+    }
+
+    .araba-gallery {
+        padding: 25px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    ARABA MODELLERİMİZ
+    <div class="Anasayfa">
+        <a href="index.html">← Anasayfa</a>
+    </div>
+</div>
+
+<div class="araba-gallery">
+
+    <div class="araba-item">
+        <img class="arabafoto" src="resim/hondaaccord.jpg" alt="Honda">
+        <div class="card-content">
+            <h3><a href="hondaaraba.html">Honda</a></h3>
+            <p>Güvenilir ve konforlu.</p>
+        </div>
+    </div>
+
+    <div class="araba-item">
+        <img class="arabafoto" src="resim/bmw320.jpeg" alt="BMW">
+        <div class="card-content">
+            <h3><a href="bmwaraba.html">BMW</a></h3>
+            <p>Sürüş keyfinin adresi.</p>
+        </div>
+    </div>
+
+    <div class="araba-item">
+        <img class="arabafoto" src="resim/cla200.jpg" alt="Mercedes">
+        <div class="card-content">
+            <h3><a href="mercedesaraba.html">Mercedes</a></h3>
+            <p>Lüks ve prestij.</p>
+        </div>
+    </div>
+
+    <div class="araba-item">
+        <img class="arabafoto" src="resim/s60.jpeg" alt="Volvo">
+        <div class="card-content">
+            <h3><a href="volvoaraba.html">Volvo</a></h3>
+            <p>Güvenli ve zarif.</p>
+        </div>
+    </div>
+
+    <div class="araba-item">
+        <img class="arabafoto" src="resim/911.jpg" alt="Porsche">
+        <div class="card-content">
+            <h3><a href="porschearaba.html">Porsche</a></h3>
+            <p>Saf performans.</p>
+        </div>
+    </div>
+
+    <div class="araba-item">
+        <img class="arabafoto" src="resim/t10f.jpg" alt="TOGG">
+        <div class="card-content">
+            <h3><a href="toggaraba.html">TOGG</a></h3>
+            <p>Yerli ve elektrikli.</p>
+        </div>
+    </div>
+
+    <div class="araba-item">
+        <img class="arabafoto" src="resim/mx5.jpeg" alt="Mazda">
+        <div class="card-content">
+            <h3><a href="mazdaaraba.html">Mazda</a></h3>
+            <p>Sürüş odaklı tasarım.</p>
+        </div>
+    </div>
+
+    <div class="araba-item">
+        <img class="arabafoto" src="resim/brz.jpg" alt="Subaru">
+        <div class="card-content">
+            <h3><a href="subaruaraba.html">Subaru</a></h3>
+            <p>Ruhunu yola yansıtır.</p>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

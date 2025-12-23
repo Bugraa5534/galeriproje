@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aprilia Motor Modelleri</title>
+
+<style>
+:root{
+    --accent:#e10600;
+}
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    min-height:100vh;
+    background:
+        linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)),
+        url("resim/rsv4.jpeg") no-repeat center center fixed;
+    background-size:cover;
+    color:#fff;
+}
+
+.header{
+    position:sticky;
+    top:0;
+    background:rgba(0,0,0,0.85);
+    padding:40px 20px;
+    text-align:center;
+    font-size:28px;
+    letter-spacing:3px;
+    box-shadow:0 10px 40px rgba(0,0,0,0.7);
+    z-index:10;
+}
+
+.Anasayfa{
+    position:absolute;
+    right:30px;
+    top:50%;
+    transform:translateY(-50%);
+}
+
+.Anasayfa a{
+    color:#aaa;
+    text-decoration:none;
+    font-size:14px;
+    transition:0.3s;
+}
+
+.Anasayfa a:hover{
+    color:var(--accent);
+}
+
+.aprilia-gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(280px,1fr));
+    gap:30px;
+    padding:60px;
+    max-width:1300px;
+    margin:auto;
+}
+
+.aprilia-item{
+    background:rgba(15,15,15,0.75);
+    border-radius:16px;
+    overflow:hidden;
+    box-shadow:0 20px 50px rgba(0,0,0,0.8);
+    transition:transform 0.4s, box-shadow 0.4s;
+    backdrop-filter:blur(6px);
+}
+
+.aprilia-item:hover{
+    transform:translateY(-10px);
+    box-shadow:0 30px 70px rgba(0,0,0,0.95);
+}
+
+.motorfoto{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    filter:brightness(0.85);
+    transition:0.4s;
+}
+
+.aprilia-item:hover .motorfoto{
+    filter:brightness(1);
+}
+
+.card-content{
+    padding:22px;
+    text-align:center;
+}
+
+.card-content h3{
+    margin:10px 0;
+}
+
+.card-content h3 a{
+    text-decoration:none;
+    color:#fff;
+    letter-spacing:1px;
+    transition:0.3s;
+}
+
+.card-content h3 a:hover{
+    color:var(--accent);
+}
+
+.card-content p{
+    font-size:14px;
+    color:rgba(255,255,255,0.75);
+    margin-top:8px;
+}
+
+@media (max-width:768px){
+    .header{
+        font-size:22px;
+        padding:30px 15px;
+    }
+    .aprilia-gallery{
+        padding:30px 20px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    APRILIA MOTOR MODELLERİ
+    <div class="Anasayfa">
+        <a href="motorbolumu.html">← Geri</a>
+    </div>
+</div>
+
+<div class="aprilia-gallery">
+
+    <div class="aprilia-item">
+        <img class="motorfoto" src="resim/rsv4.jpeg" alt="Aprilia RSV4">
+        <div class="card-content">
+            <h3><a href="rsv4.html">RSV4</a></h3>
+            <p>Saf yarış teknolojisi.</p>
+        </div>
+    </div>
+
+    <div class="aprilia-item">
+        <img class="motorfoto" src="resim/tuonov41100.webp" alt="Aprilia Tuono V4 1100">
+        <div class="card-content">
+            <h3><a href="tuonov4.html">Tuono V4 1100</a></h3>
+            <p>Çıplak güç ve kontrol.</p>
+        </div>
+    </div>
+
+    <div class="aprilia-item">
+        <img class="motorfoto" src="resim/rs660.webp" alt="Aprilia RS 660">
+        <div class="card-content">
+            <h3><a href="rs660.html">RS 660</a></h3>
+            <p>Hafif, çevik, sportif.</p>
+        </div>
+    </div>
+
+    <div class="aprilia-item">
+        <img class="motorfoto" src="resim/shiver900.jpeg" alt="Aprilia Shiver 900">
+        <div class="card-content">
+            <h3><a href="shiver900.html">Shiver 900</a></h3>
+            <p>Günlük sürüşte güç.</p>
+        </div>
+    </div>
+
+    <div class="aprilia-item">
+        <img class="motorfoto" src="resim/caponord1200.jpg" alt="Aprilia Caponord 1200">
+        <div class="card-content">
+            <h3><a href="caponord1200.html">Caponord 1200</a></h3>
+            <p>Sport-touring konforu.</p>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Suzuki Motor Modelleri</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222; /* Koyu arka plan */
+    margin: 0;
+    padding: 0;
+    color: #fff; /* Metin rengi beyaz */
+}
+
+.header {
+    background-color: #111; /* Koyu başlık arka planı */
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    font-size: 28px;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+.Anasayfa {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.Anasayfa a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.Anasayfa a:hover {
+    color: #00aaff;
+}
+
+.suzuki-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 40px 20px;
+}
+
+.suzuki-item {
+    background-color: #333; /* Koyu kutu rengi */
+    border-radius: 12px;
+    width: 250px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+}
+
+.suzuki-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.6);
+}
+
+.motorfoto {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.suzuki-item:hover .motorfoto {
+    transform: scale(1.05);
+}
+
+.suzuki-item h3 a {
+    text-decoration: none;
+    color: #fff; /* Bağlantı metni beyaz */
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.suzuki-item h3 a:hover {
+    color: #00aaff;
+}
+
+.suzuki-item p {
+    padding: 10px;
+    color: #ddd; /* Açık gri metin */
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .suzuki-item {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    Suzuki Motor Modellerimiz
+    <div class="Anasayfa">
+        <a href="motorbolumu.html">Geri</a>
+    </div>
+</div>
+
+<div class="suzuki-gallery">
+
+    <div class="suzuki-item">
+        <img class="motorfoto" src="resim/gsxr1000.jpg" alt="Suzuki GSX-R1000">
+        <h3><a href="gsxr1000.html">GSX-R1000</a></h3>
+        <p>Daha fazla bilgi için tıklayınız.</p>
+    </div>
+
+    <div class="suzuki-item">
+        <img class="motorfoto" src="resim/gsxs750.webp" alt="Suzuki GSX-S750">
+        <h3><a href="gsxs750.html">GSX-S750</a></h3>
+        <p>Daha fazla bilgi için tıklayınız.</p>
+    </div>
+
+    <div class="suzuki-item">
+        <img class="motorfoto" src="resim/vstrom650.jpg" alt="Suzuki V-Strom 650">
+        <h3><a href="vstrom650.html">V-Strom 650</a></h3>
+        <p>Daha fazla bilgi için tıklayınız.</p>
+    </div>
+
+    <div class="suzuki-item">
+        <img class="motorfoto" src="resim/hayabusa.jpg" alt="Suzuki Hayabusa">
+        <h3><a href="hayabusa.html">Hayabusa</a></h3>
+        <p>Daha fazla bilgi için tıklayınız.</p>
+    </div>
+
+    <div class="suzuki-item">
+        <img class="motorfoto" src="resim/sv650.jpeg" alt="Suzuki SV650">
+        <h3><a href="sv650.html">SV650</a></h3>
+        <p>Daha fazla bilgi için tıklayınız.</p>
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KTM Motor Modelleri</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #1c1c1c, #333);
+    color: #fff;
+}
+
+.header {
+    background: rgba(0,0,0,0.85);
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    font-size: 28px;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.Anasayfa {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.Anasayfa a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.Anasayfa a:hover {
+    color: #00aaff;
+}
+
+.ktm-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 40px 20px;
+}
+
+.ktm-item {
+    background: rgba(255,255,255,0.05);
+    border-radius: 12px;
+    width: 250px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+}
+
+.ktm-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.6);
+}
+
+.motorfoto {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-bottom: 2px solid #00aaff;
+    transition: transform 0.3s;
+}
+
+.ktm-item:hover .motorfoto {
+    transform: scale(1.05);
+}
+
+.ktm-item h3 a {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.ktm-item h3 a:hover {
+    color: #00aaff;
+}
+
+.ktm-item p {
+    padding: 10px;
+    color: #ccc;
+    font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    KTM Motor Modelleri
+    <div class="Anasayfa">
+        <a href="motorbolumu.html">Geri</a>
+    </div>
+</div>
+
+<div class="ktm-gallery">
+
+    <div class="ktm-item">
+        <img class="motorfoto" src="resim/ktmduke390.jpg" alt="KTM Duke 390">
+        <h3><a href="ktmduke390.html">KTM Duke 390</a></h3>
+        <p>Hafif ve çevik şehir motoru.</p>
+    </div>
+
+    <div class="ktm-item">
+        <img class="motorfoto" src="resim/ktmrc390.jpeg" alt="KTM RC 390">
+        <h3><a href="ktmrc390.html">KTM RC 390</a></h3>
+        <p>Sportif tasarım ve performans odaklı.</p>
+    </div>
+
+    <div class="ktm-item">
+        <img class="motorfoto" src="resim/ktm1290superduke.webp" alt="KTM 1290 Super Duke R">
+        <h3><a href="ktm1290superduke.html">KTM 1290 Super Duke R</a></h3>
+        <p>Güçlü naked motor, agresif performans.</p>
+    </div>
+
+    <div class="ktm-item">
+        <img class="motorfoto" src="resim/ktmadventure390.jpg" alt="KTM Adventure 390">
+        <h3><a href="ktmadventure390.html">KTM Adventure 390</a></h3>
+        <p>Uzun yol ve macera odaklı motor.</p>
+    </div>
+
+    <div class="ktm-item">
+        <img class="motorfoto" src="resim/ktm250exc.jpeg" alt="KTM 250 EXC">
+        <h3><a href="ktm250exc.html">KTM 250 EXC</a></h3>
+        <p>Off-road ve enduro performansı için ideal.</p>
+    </div>
+
+</div>
+
+</body>
+</html>
